@@ -1,0 +1,35 @@
+# Node / JS
+node_modules/
+dist/
+dist-ssr/
+*.local
+.pnpm-store/
+
+# Vite
+apps/*/dist/
+
+# PWA generated files
+apps/*/dev-dist/
+
+# Firebase
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+
+# Go
+api/bin/
+*.exe
+*.exe~
+*.test
+*.out
+
+# Editors / OS
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+.env.local
+.env.*.local

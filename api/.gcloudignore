@@ -1,0 +1,4 @@
+# Files not needed when deploying to App Engine
+.git
+.gitignore
+*_test.go

@@ -1,0 +1,78 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      admin: ${{ steps.filter.outputs.admin }}
+      player: ${{ steps.filter.outputs.player }}
+      api: ${{ steps.filter.outputs.api }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            admin:
+              - 'apps/admin/**'
+              - 'pnpm-workspace.yaml'
+              - 'pnpm-lock.yaml'
+            player:
+              - 'apps/player/**'
+              - 'pnpm-workspace.yaml'
+              - 'pnpm-lock.yaml'
+            api:
+              - 'api/**'
+
+  admin:
+    needs: changes
+    if: needs.changes.outputs.admin == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter admin lint
+      - run: pnpm --filter admin test
+      - run: pnpm --filter admin build
+
+  player:
+    needs: changes
+    if: needs.changes.outputs.player == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter player lint
+      - run: pnpm --filter player test
+      - run: pnpm --filter player build
+
+  api:
+    needs: changes
+    if: needs.changes.outputs.api == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+      - working-directory: api
+        run: go build ./...
+      - working-directory: api
+        run: go vet ./...
+      - working-directory: api
+        run: go test ./...

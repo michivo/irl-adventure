@@ -1,0 +1,6 @@
+runtime: go123
+
+handlers:
+  - url: /.*
+    script: auto
+    secure: always
