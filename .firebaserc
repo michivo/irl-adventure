@@ -1,12 +1,16 @@
 {
   "projects": {
-    "default": "REPLACE_WITH_GCP_PROJECT_ID"
+    "default": "irl-adventure"
   },
   "targets": {
-    "REPLACE_WITH_GCP_PROJECT_ID": {
+    "irl-adventure": {
       "hosting": {
-        "admin": ["REPLACE_WITH_ADMIN_HOSTING_SITE_ID"],
-        "player": ["REPLACE_WITH_PLAYER_HOSTING_SITE_ID"]
+        "admin": [
+          "irl-adventure-admin"
+        ],
+        "player": [
+          "irl-adventure-player"
+        ]
       }
     }
   }

@@ -33,3 +33,9 @@ Thumbs.db
 .env
 .env.local
 .env.*.local
+.agents/skills/firebase-*/**
+.agents/skills/extension-to-functions-*/**
+.agents/skills/xcode-*/**
+.claude/skills/firebase-*/**
+.claude/skills/extension-to-functions-*/**
+.claude/skills/xcode-*/**

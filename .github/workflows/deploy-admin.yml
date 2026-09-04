@@ -27,7 +27,7 @@ jobs:
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_IRL_ADVENTURE }}
           projectId: ${{ secrets.FIREBASE_PROJECT_ID }}
           channelId: live
           target: admin
