@@ -6,8 +6,8 @@ A platform for playing adventure-style games in the real world, on mobile.
 
 ```
 apps/
-  admin/    # Vue 3 + TypeScript + Vite SPA, PrimeVue - game management dashboard
-  player/   # Vue 3 + TypeScript + Vite SPA + PWA, PrimeVue - mobile game client
+  admin/    # Vue 3 + TypeScript + Vite SPA, NuxtUI - game management dashboard
+  player/   # Vue 3 + TypeScript + Vite SPA + PWA, NuxtUI - mobile game client
 .github/workflows/  # CI + deploy pipelines
 firebase.json, .firebaserc  # Firebase Hosting config (multi-site: admin + player)
 ```

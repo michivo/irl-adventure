@@ -1,10 +1,12 @@
 import { fileURLToPath, URL } from 'node:url';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
+import ui from '@nuxt/ui/vite';
 import { VitePWA } from 'vite-plugin-pwa';
 export default defineConfig({
     plugins: [
         vue(),
+        ui(),
         VitePWA({
             registerType: 'autoUpdate',
             includeAssets: ['favicon.ico'],
