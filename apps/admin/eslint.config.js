@@ -8,7 +8,7 @@ export default [
   },
   {
     name: 'app/files-to-ignore',
-    ignores: ['**/dist/**', '**/node_modules/**'],
+    ignores: ['**/dist/**', '**/node_modules/**', '**/dev-dist/**', "components.d.ts", "auto-imports.d.ts"],
   },
   ...pluginVue.configs['flat/essential'],
   ...defineConfigWithVueTs(),
