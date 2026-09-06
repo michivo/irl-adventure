@@ -7,6 +7,12 @@
       "skillPath": "skills/engineering/ask-matt/SKILL.md",
       "computedHash": "e5404aef8525ca0c8fc76692567a38dfdd5d0cc1a9f8d47c02c18f29f60d92a6"
     },
+    "capacitor-plugins": {
+      "source": "capawesome-team/skills",
+      "sourceType": "github",
+      "skillPath": "skills/capacitor-plugins/SKILL.md",
+      "computedHash": "1dcf94377ce4d8a182f1710a45d5611f271cd03bb8b87002303693ab509d4fb4"
+    },
     "claude-handoff": {
       "source": "mattpocock/skills",
       "sourceType": "github",

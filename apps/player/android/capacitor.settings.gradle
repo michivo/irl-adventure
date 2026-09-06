@@ -13,3 +13,6 @@ project(':capacitor-keyboard').projectDir = new File('../../../node_modules/.pnp
 
 include ':capacitor-status-bar'
 project(':capacitor-status-bar').projectDir = new File('../../../node_modules/.pnpm/@capacitor+status-bar@8.0.3_@capacitor+core@8.5.1/node_modules/@capacitor/status-bar/android')
+
+include ':capawesome-capacitor-android-edge-to-edge-support'
+project(':capawesome-capacitor-android-edge-to-edge-support').projectDir = new File('../../../node_modules/.pnpm/@capawesome+capacitor-andro_bb5c2081fe489e5daaba0cb70ba8f1a8/node_modules/@capawesome/capacitor-android-edge-to-edge-support/android')

@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace = "com.player"
+    namespace = "com.michivo.irladventure.player"
     compileSdk = rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.player"
+        applicationId "com.michivo.irladventure.player"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

@@ -36,6 +36,8 @@ Thumbs.db
 .agents/skills/firebase-*/**
 .agents/skills/extension-to-functions-*/**
 .agents/skills/xcode-*/**
+.agents/skills/capacitor-*/**
 .claude/skills/firebase-*/**
 .claude/skills/extension-to-functions-*/**
 .claude/skills/xcode-*/**
+.claude/skills/capacitor-*/**

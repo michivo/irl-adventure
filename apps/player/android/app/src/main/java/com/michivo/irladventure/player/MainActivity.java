@@ -1,4 +1,4 @@
-package com.player;
+package com.michivo.irladventure.player;
 
 import com.getcapacitor.BridgeActivity;
 

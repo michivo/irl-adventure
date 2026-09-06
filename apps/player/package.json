@@ -20,6 +20,7 @@
     "@capacitor/haptics": "8.0.2",
     "@capacitor/keyboard": "8.0.5",
     "@capacitor/status-bar": "8.0.3",
+    "@capawesome/capacitor-android-edge-to-edge-support": "^8.0.8",
     "@nuxt/ui": "^4.11.0",
     "firebase": "^12.18.0",
     "tailwindcss": "^4.3.3",
