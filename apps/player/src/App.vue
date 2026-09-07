@@ -3,6 +3,6 @@
 
 <template>
   <UApp>
-    <RouterView />
+    <RouterView class="p-3"/>
   </UApp>
 </template>
