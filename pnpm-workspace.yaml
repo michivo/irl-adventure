@@ -1,6 +1,7 @@
 packages:
   - "apps/*"
 allowBuilds:
+  '@capacitor/background-runner': true
   '@firebase/util': true
   esbuild: true
   protobufjs: true

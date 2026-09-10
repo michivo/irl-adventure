@@ -5,8 +5,11 @@ project(':capacitor-android').projectDir = new File('../../../node_modules/.pnpm
 include ':capacitor-app'
 project(':capacitor-app').projectDir = new File('../../../node_modules/.pnpm/@capacitor+app@8.1.1_@capacitor+core@8.5.1/node_modules/@capacitor/app/android')
 
+include ':capacitor-background-runner'
+project(':capacitor-background-runner').projectDir = new File('../../../node_modules/.pnpm/@capacitor+background-runner@3.0.0_@capacitor+core@8.5.1/node_modules/@capacitor/background-runner/android')
+
 include ':capacitor-geolocation'
-project(':capacitor-geolocation').projectDir = new File('../node_modules/@capacitor/geolocation/android')
+project(':capacitor-geolocation').projectDir = new File('../../../node_modules/.pnpm/@capacitor+geolocation@8.2.2_@capacitor+core@8.5.1/node_modules/@capacitor/geolocation/android')
 
 include ':capacitor-haptics'
 project(':capacitor-haptics').projectDir = new File('../../../node_modules/.pnpm/@capacitor+haptics@8.0.2_@capacitor+core@8.5.1/node_modules/@capacitor/haptics/android')
@@ -18,4 +21,13 @@ include ':capacitor-status-bar'
 project(':capacitor-status-bar').projectDir = new File('../../../node_modules/.pnpm/@capacitor+status-bar@8.0.3_@capacitor+core@8.5.1/node_modules/@capacitor/status-bar/android')
 
 include ':capawesome-capacitor-android-edge-to-edge-support'
-project(':capawesome-capacitor-android-edge-to-edge-support').projectDir = new File('../node_modules/@capawesome/capacitor-android-edge-to-edge-support/android')
+project(':capawesome-capacitor-android-edge-to-edge-support').projectDir = new File('../../../node_modules/.pnpm/@capawesome+capacitor-andro_bb5c2081fe489e5daaba0cb70ba8f1a8/node_modules/@capawesome/capacitor-android-edge-to-edge-support/android')
+
+include ':capgo-background-geolocation'
+project(':capgo-background-geolocation').projectDir = new File('../../../node_modules/.pnpm/@capgo+background-geolocation@8.4.4_@capacitor+core@8.5.1/node_modules/@capgo/background-geolocation/android')
+
+include ':capgo-capacitor-background-task'
+project(':capgo-capacitor-background-task').projectDir = new File('../../../node_modules/.pnpm/@capgo+capacitor-background-task@8.1.7_@capacitor+core@8.5.1/node_modules/@capgo/capacitor-background-task/android')
+
+include ':mediagrid-capacitor-native-audio'
+project(':mediagrid-capacitor-native-audio').projectDir = new File('../../../node_modules/.pnpm/@mediagrid+capacitor-native_774719d2ed37dee6bb197a3be029cb98/node_modules/@mediagrid/capacitor-native-audio/android')
