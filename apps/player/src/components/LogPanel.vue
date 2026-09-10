@@ -3,7 +3,7 @@ import { useLogEntries } from '../composables/useLogger';
 
 const entries = useLogEntries();
 
-const levelClasses: Record<string, string> = {
+const levelClasses: Record<'info' | 'warn' | 'error', string> = {
   info: 'text-gray-300',
   warn: 'text-yellow-400',
   error: 'text-red-400',
