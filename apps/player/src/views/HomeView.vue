@@ -57,9 +57,7 @@ function playNyanCatPreview() {
     <h1>IRL Adventure</h1>
     <p>Your next real-world adventure starts here. Games:</p>
     <div class="flex flex-col items-stretch">
-      <UButton @click="playNyanCatPreview()">Play Nyan Cat</UButton>
-      <UButton @click="toggleLocationTracking()">{{ isTracking ? 'Stop Tracking' : 'Track Location' }}</UButton>
-    </div>
+      <UButton @click="toggleLocationTracking()">{{ isTracking ? 'Stop Background Tracking' : 'Enable Background Tracking' }}</UButton>
     {{ games.length ?? 0 }} game(s) available.
     <ul>
       <li v-for="game in games" :key="game.id">{{ game.name }} - {{ game.id }}</li>
