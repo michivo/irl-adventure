@@ -16,11 +16,7 @@
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"></meta-data>
         </provider>
 
-        <service android:name="us.mediagrid.capacitorjs.plugins.nativeaudio.AudioPlayerService" android:description="@string/audio_player_service_description" android:foregroundServiceType="mediaPlayback" android:exported="true">
-            <intent-filter>
-                <action android:name="androidx.media3.session.MediaSessionService"/>
-            </intent-filter>
-        </service>
+        <service android:name="us.mediagrid.capacitorjs.plugins.nativeaudio.AudioPlayerService" android:description="@string/audio_player_service_description" android:foregroundServiceType="mediaPlayback" android:exported="false">
     </application>
 
     <!-- Permissions -->
