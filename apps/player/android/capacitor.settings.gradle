@@ -23,9 +23,7 @@ project(':capacitor-status-bar').projectDir = new File('../../../node_modules/.p
 include ':capawesome-capacitor-android-edge-to-edge-support'
 project(':capawesome-capacitor-android-edge-to-edge-support').projectDir = new File('../../../node_modules/.pnpm/@capawesome+capacitor-andro_bb5c2081fe489e5daaba0cb70ba8f1a8/node_modules/@capawesome/capacitor-android-edge-to-edge-support/android')
 
-include ':capgo-background-geolocation'
-project(':capgo-background-geolocation').projectDir = new File('../../../node_modules/.pnpm/@capgo+background-geolocation@8.4.4_@capacitor+core@8.5.1/node_modules/@capgo/background-geolocation/android')
-
+project(':capgo-background-geolocation').projectDir = new File('../../../node_modules/.pnpm/@capgo+background-geolocation@8.4.5_@capacitor+core@8.5.1/node_modules/@capgo/background-geolocation/android')
 include ':capgo-capacitor-background-task'
 project(':capgo-capacitor-background-task').projectDir = new File('../../../node_modules/.pnpm/@capgo+capacitor-background-task@8.1.7_@capacitor+core@8.5.1/node_modules/@capgo/capacitor-background-task/android')
 
