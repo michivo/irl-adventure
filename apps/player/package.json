@@ -15,6 +15,7 @@
   "dependencies": {
     "@capacitor/android": "8.5.1",
     "@capacitor/app": "8.1.1",
+    "@capacitor/background-runner": "^3.0.0",
     "@capacitor/cli": "8.5.1",
     "@capacitor/core": "8.5.1",
     "@capacitor/geolocation": "^8.2.2",
@@ -22,25 +23,29 @@
     "@capacitor/keyboard": "8.0.5",
     "@capacitor/status-bar": "8.0.3",
     "@capawesome/capacitor-android-edge-to-edge-support": "^8.0.8",
-    "@nuxt/ui": "^4.11.0",
+    "@capgo/background-geolocation": "^8.4.5",
+    "@capgo/capacitor-background-task": "^8.1.7",
+    "@mediagrid/capacitor-native-audio": "^3.0.0",
+    "@nuxt/ui": "^4.11.1",
     "firebase": "^12.18.0",
     "tailwindcss": "^4.3.3",
     "vue": "^3.5.42",
-    "vue-router": "^4.5.0",
-    "vuefire": "^3.2.3"
+    "vue-router": "^4.6.4",
+    "vuefire": "^3.2.3",
+    "workbox-window": "7.3.0"
   },
   "devDependencies": {
     "@tsconfig/node24": "^24.0.5",
-    "@types/node": "^24.1.0",
-    "@vitejs/plugin-vue": "^5.2.1",
-    "@vue/eslint-config-typescript": "^14.2.0",
+    "@types/node": "^24.13.3",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "@vue/eslint-config-typescript": "^14.9.0",
     "@vue/tsconfig": "^0.7.0",
-    "eslint": "^10.9.1",
-    "eslint-plugin-vue": "^10.10.0",
-    "typescript": "^5.7.2",
-    "vite": "^6.0.7",
-    "vite-plugin-pwa": "^0.21.1",
-    "vitest": "^2.1.8",
-    "vue-tsc": "^2.2.0"
+    "eslint": "^10.10.0",
+    "eslint-plugin-vue": "^10.11.0",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.3",
+    "vite-plugin-pwa": "^0.21.2",
+    "vitest": "^2.1.9",
+    "vue-tsc": "^2.2.12"
   }
 }

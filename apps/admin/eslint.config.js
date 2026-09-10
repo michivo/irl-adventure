@@ -1,5 +1,5 @@
 import pluginVue from 'eslint-plugin-vue';
-import { defineConfigWithVueTs } from '@vue/eslint-config-typescript';
+import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescript';
 
 export default [
   {
@@ -11,7 +11,7 @@ export default [
     ignores: ['**/dist/**', '**/node_modules/**', '**/dev-dist/**', "components.d.ts", "auto-imports.d.ts"],
   },
   ...pluginVue.configs['flat/essential'],
-  ...defineConfigWithVueTs(),
+  ...defineConfigWithVueTs(vueTsConfigs.recommended),
   {
     rules: {
       semi: ['error', 'always'],

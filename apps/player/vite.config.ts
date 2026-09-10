@@ -11,6 +11,8 @@ export default defineConfig({
     ui(),
     VitePWA({
       registerType: 'autoUpdate',
+      // Registration is handled manually in main.ts so it can be skipped inside the Capacitor native app.
+      injectRegister: false,
       includeAssets: ['favicon.ico'],
       manifest: {
         name: 'IRL Adventure',

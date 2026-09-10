@@ -11,9 +11,10 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    LogPanel: typeof import('./src/components/LogPanel.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    UAlert: typeof import('./../../node_modules/.pnpm/@nuxt+ui@4.11.0_7d538819ba9eada06f21074bb147040d/node_modules/@nuxt/ui/dist/runtime/components/Alert.vue')['default']
     UApp: typeof import('./../../node_modules/.pnpm/@nuxt+ui@4.11.0_7d538819ba9eada06f21074bb147040d/node_modules/@nuxt/ui/dist/runtime/components/App.vue')['default']
+    UButton: typeof import('./../../node_modules/.pnpm/@nuxt+ui@4.11.0_7d538819ba9eada06f21074bb147040d/node_modules/@nuxt/ui/dist/runtime/components/Button.vue')['default']
   }
 }
