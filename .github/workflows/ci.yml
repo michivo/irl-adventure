@@ -11,6 +11,7 @@ jobs:
     outputs:
       admin: ${{ steps.filter.outputs.admin }}
       player: ${{ steps.filter.outputs.player }}
+      tourbuilder: ${{ steps.filter.outputs.tourbuilder }}
     steps:
       - uses: actions/checkout@v7
       - uses: dorny/paths-filter@v3
@@ -23,6 +24,10 @@ jobs:
               - 'pnpm-lock.yaml'
             player:
               - 'apps/player/**'
+              - 'pnpm-workspace.yaml'
+              - 'pnpm-lock.yaml'
+            tourbuilder:
+              - 'agents/**'
               - 'pnpm-workspace.yaml'
               - 'pnpm-lock.yaml'
 
@@ -57,3 +62,17 @@ jobs:
       - run: pnpm --filter player lint
       - run: pnpm --filter player test
       - run: pnpm --filter player build
+
+  tourbuilder:
+    needs: changes
+    if: needs.changes.outputs.tourbuilder == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter tourbuilder lint
