@@ -8,6 +8,7 @@ const synthesisTool = tool({
     parameters: z.object({ text: z.string() }),
     async execute({ text }: { text: string }) {
         const tts = new EdgeTTS();
+        console.log('Starting synthesis for text:', text);
 
         const options = {
             rate: '100%',
