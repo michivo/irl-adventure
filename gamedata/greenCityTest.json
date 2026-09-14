@@ -1,0 +1,26 @@
+{
+  "id": "greenCityTest",
+  "version": 1,
+  "name": "Green City Test",
+  "description": "Eine kleine Tour durch die Green City",
+  "stages": [
+    {
+      "id": "dasNetz",
+      "name": "Das Netz",
+      "description": "Hier kannst du hinaufklettern!",
+      "action": {
+        "type": "PLAY_AUDIO",
+        "audioUrl": "https://www.nyan.cat/music/original.mp3"
+      },
+      "preconditions": [
+        {
+          "name": "Beim Netz",
+          "type": "LOCATION_REACHED",
+          "locationLatitude": 47.037815,
+          "locationLongitude": 15.393847,
+          "locationAccuracy": 20
+        }
+      ]
+    }
+  ]
+}
