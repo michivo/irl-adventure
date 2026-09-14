@@ -3,7 +3,7 @@ name: create-game-stage
 description: Creates a stage for the adventure game.
 ---
 
-We are building a mobile real life adventure game. A game consists of several stages, each representing a different location or scenario that the player can explore. A game is defined in a JSON file, and this JSON file consists of an array of stage objects, each containing details about the stage such as its name, description, and possible actions the player can take.
+We are building a mobile real life adventure game. A game is defined in a JSON file as a Game object with a `stages` array of stage objects, each containing details about the stage such as its name, description, and possible actions the player can take.
 
 A game in the JSON file should have the following type:
 
