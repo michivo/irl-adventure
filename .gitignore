@@ -41,3 +41,6 @@ Thumbs.db
 .claude/skills/extension-to-functions-*/**
 .claude/skills/xcode-*/**
 .claude/skills/capacitor-*/**
+
+
+agents/output/**
