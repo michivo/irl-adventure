@@ -1,5 +1,6 @@
 packages:
   - "apps/*"
+  - "agents"
 allowBuilds:
   '@capacitor/background-runner': true
   '@firebase/util': true

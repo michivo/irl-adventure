@@ -1,0 +1,28 @@
+{
+  "name": "agents",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tourbuilder.ts",
+  "scripts": {
+    "start:tourbuilder": "node --env-file=.env tourbuilder.ts",
+    "lint": "eslint . --max-warnings=0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@andresaya/edge-tts": "^1.8.0",
+    "@openai/agents": "^0.18.0",
+    "firebase-admin": "^14.4.0",
+    "zod": "^4.6.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@tsconfig/node24": "^24.0.5",
+    "@types/node": "^24.13.3",
+    "eslint": "^10.10.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.70.0"
+  }
+}
